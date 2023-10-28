@@ -13,6 +13,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: camp2023std
+                name: camp2023std-service
                 port:
                   number: 80
