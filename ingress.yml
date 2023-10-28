@@ -10,7 +10,7 @@ spec:
     - host: app.ostepopp.site
     - http:
         paths:
-          - path: /camp2023std/hello(/|$)(.*)
+          - path: /camp2023std/hello
             pathType: Prefix
             backend:
               service:
