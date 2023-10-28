@@ -5,7 +5,7 @@ metadata:
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /$2
 spec:
-  ingressClassName: camp2023std
+  ingressClassName: nginx
   rules:
     - http:
         paths:
@@ -15,4 +15,4 @@ spec:
               service:
                 name: camp2023std-service
                 port:
-                  number: 80
+                  number: 8080
