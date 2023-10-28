@@ -5,7 +5,7 @@ metadata:
   namespace: apps
 spec:
   selector:
-    app.kubernetes.io/name: proxy
+    app: camp2023std
   ports:
     - name: camp2023std-port
       protocol: TCP
