@@ -12,6 +12,6 @@ public class HelloController
 
     @GetMapping(path = "/steinar/hello", produces = PRODUCES)
     public ResponseEntity<String> hello() {
-        return ResponseEntity.ok("Hi ostepopp!");
+        return ResponseEntity.ok("Hihaa!");
     }
 }
