@@ -9,7 +9,7 @@ spec:
   rules:
     - http:
         paths:
-          - path: /camp2023std
+          - path: /camp2023std/hello(/|$)(.*)
             pathType: Prefix
             backend:
               service:
