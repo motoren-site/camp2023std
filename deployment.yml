@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: camp2023std-deployment
+  namespace: apps
+  labels:
+    app: camp2023std
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: camp2023std
+  template:
+    metadata:
+      labels:
+        app: camp2023std
+    spec:
+      containers:
+        - name: camp2023std
+          image: registry.digitalocean.com/containers/camp2023std:latest
+          ports:
+            - containerPort: 8080
