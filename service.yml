@@ -7,7 +7,7 @@ spec:
   selector:
     app.kubernetes.io/name: proxy
   ports:
-    - name: hellokube-port
+    - name: camp2023std-port
       protocol: TCP
       port: 80
       targetPort: 8080
