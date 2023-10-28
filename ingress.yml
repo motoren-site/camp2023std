@@ -8,9 +8,9 @@ spec:
   ingressClassName: nginx
   rules:
     - host: app.ostepopp.site
-    - http:
+      http:
         paths:
-          - path: /camp2023std/hello
+          - path: "/steinar(/|$)(.*)"
             pathType: Prefix
             backend:
               service:
